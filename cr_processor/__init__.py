@@ -3,7 +3,8 @@ import logging
 import re
 import json
 from typing import Optional, Dict
-
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
 class CRPreProcesser:
   def __init__(self):
             self.replacements = {
